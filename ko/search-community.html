@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>검색 — SOOKs PLUS</title>
+<meta name="description" content="태국에서 시작한 글로벌 웰니스 검색·예약 플랫폼">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/app.css?v=1791109595">
+<link rel="icon" href="../static/img/sooksplus-logo-horizontal.png">
+</head>
+<body>
+
+
+
+
+<header class="top">
+ <div class="wrap bar">
+  <a class="logo" href="index.html"><img src="../static/img/sooksplus-logo-horizontal.png" alt="SOOKs PLUS"></a>
+
+  <nav class="mainnav">
+    <a href="search-travel.html">숙박</a>
+    <a href="search-wellness.html">웰니스</a>
+    <a href="search-food.html">다이닝</a>
+    <a href="search-experience.html">체험</a>
+    <a href="offers.html">프로모션</a>
+  </nav>
+
+  <div class="util">
+    <details class="lang hide-sm">
+      <summary class="chipbtn">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 10h17.6M3.2 14h17.6"/><path d="M12 3c2.4 2.4 3.6 5.4 3.6 9S14.4 18.6 12 21C9.6 18.6 8.4 15.6 8.4 12S9.6 5.4 12 3Z"/>
+</svg>
+ KO</summary>
+      <div class="lang-menu">
+        
+        <a class="" href="../th/index.html">
+          <span>ไทย</span><span>TH</span></a>
+        
+        <a class="" href="../en/index.html">
+          <span>English</span><span>EN</span></a>
+        
+        <a class="" href="../zh/index.html">
+          <span>中文</span><span>ZH</span></a>
+        
+        <a class="" href="../ja/index.html">
+          <span>日本語</span><span>JA</span></a>
+        
+        <a class="on" href="../ko/index.html">
+          <span>한국어</span><span>KO</span></a>
+        
+        <a class="" href="../ru/index.html">
+          <span>Русский</span><span>RU</span></a>
+        
+        <a class="" href="../de/index.html">
+          <span>Deutsch</span><span>DE</span></a>
+        
+        <a class="" href="../fr/index.html">
+          <span>Français</span><span>FR</span></a>
+        
+        <a class="" href="../ar/index.html">
+          <span>العربية</span><span>AR</span></a>
+        
+      </div>
+    </details>
+    <a class="chipbtn hide-sm" href="soon.html" aria-label="저장">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-9.6A4.4 4.4 0 0 1 12 8.3a4.4 4.4 0 0 1 7.5 2.6c0 5-7.5 9.6-7.5 9.6Z"/>
+</svg>
+</a>
+    
+      <a class="chipbtn hide-sm" href="soon.html">로그인</a>
+      <a class="btn btn-primary btn-sm" href="soon.html">회원가입</a>
+    
+  </div>
+ </div>
+</header>
+
+
+<div class="wrap">
+
+  <!-- compact search bar -->
+  <form class="searchpanel" method="get" action="/search" style="margin:16px auto 0;box-shadow:var(--sh-2)">
+    <input type="hidden" name="lang" value="ko">
+    <input type="hidden" name="cert" value="">
+    <div class="sp-grid">
+      <div class="sp-field"><label>목적지</label>
+        <input name="q" value="" placeholder="도시, 지역 또는 업체명"></div>
+      <div class="sp-field"><label>도시</label>
+        <select name="city"><option value="">모든 도시</option>
+          <option >ภูเก็ต</option><option >สมุย</option><option >กระบี่</option><option >เขาหลัก</option><option >เชียงใหม่</option><option >กรุงเทพฯ</option></select></div>
+      <div class="sp-field"><label>카테고리</label>
+        <select name="pillar"><option value="">모든 카테고리</option>
+          <option value="wellness" >스파·마사지</option><option value="mind" >명상·마음</option><option value="food" >건강식</option><option value="travel" >리트릿·숙박</option><option value="experience" >태국 체험</option><option value="community" selected>웰니스 커뮤니티</option></select></div>
+      <button class="btn btn-primary" type="submit">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+</svg>
+ 검색</button>
+    </div>
+  </form>
+
+  <section>
+   <div class="results">
+    <!-- filters -->
+    <aside class="filters">
+      <div class="flex" style="justify-content:space-between;margin-bottom:6px">
+        <b style="font-size:15px">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/>
+</svg>
+ 필터</b>
+        <a href="search.html" style="font-size:12.5px;color:var(--emerald)">필터 초기화</a>
+      </div>
+
+      <div class="fgroup">
+        <h4>인증 등급</h4>
+        
+        <label><input type="radio" name="cert" checked
+          onclick="location.href='/search?lang=ko&q=&city=&pillar=community&sort=rating&cert='">
+          전체</label>
+        
+        <label><input type="radio" name="cert" 
+          onclick="location.href='/search?lang=ko&q=&city=&pillar=community&sort=rating&cert=certified'">
+          인증</label>
+        
+        <label><input type="radio" name="cert" 
+          onclick="location.href='/search?lang=ko&q=&city=&pillar=community&sort=rating&cert=platinum'">
+          플래티넘</label>
+        
+      </div>
+
+      <div class="fgroup">
+        <h4>도시</h4>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ko&city=%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95&pillar=community&cert=&sort=rating'">
+          ภูเก็ต</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ko&city=%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%A2&pillar=community&cert=&sort=rating'">
+          สมุย</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ko&city=%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88&pillar=community&cert=&sort=rating'">
+          กระบี่</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ko&city=%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81&pillar=community&cert=&sort=rating'">
+          เขาหลัก</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ko&city=%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88&pillar=community&cert=&sort=rating'">
+          เชียงใหม่</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ko&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=community&cert=&sort=rating'">
+          กรุงเทพฯ</label>
+        
+      </div>
+
+      <div class="fgroup">
+        <h4>카테고리</h4>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ko&city=&pillar=wellness&cert=&sort=rating'">
+          스파·마사지</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ko&city=&pillar=mind&cert=&sort=rating'">
+          명상·마음</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ko&city=&pillar=food&cert=&sort=rating'">
+          건강식</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ko&city=&pillar=travel&cert=&sort=rating'">
+          리트릿·숙박</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ko&city=&pillar=experience&cert=&sort=rating'">
+          태국 체험</label>
+        
+        <label><input type="radio" name="pillar" checked
+          onclick="location.href='/search?lang=ko&city=&pillar=community&cert=&sort=rating'">
+          웰니스 커뮤니티</label>
+        
+      </div>
+    </aside>
+
+    <!-- results -->
+    <div>
+      <div class="sortbar">
+        <span class="count"><b>0곳</b>
+          </span>
+        <div class="flex">
+          <span class="muted" style="font-size:13px">정렬</span>
+          
+          <a class="chipbtn on"
+             href="search-community.html">평점 높은 순</a>
+          
+          <a class="chipbtn "
+             href="search-community.html">가격 낮은 순</a>
+          
+          <a class="chipbtn "
+             href="search-community.html">예약 가능 많은 순</a>
+          
+        </div>
+      </div>
+
+      
+        <div class="panel" style="text-align:center;padding:40px 20px">
+          <h3>결과 없음</h3>
+          <p class="muted">다른 키워드, 도시 또는 카테고리로 검색해 보세요</p>
+          <a class="btn btn-ghost" href="search.html">필터 초기화</a>
+        </div>
+      
+    </div>
+   </div>
+  </section>
+</div>
+
+
+<footer class="site">
+ <div class="wrap">
+  <div class="fg">
+    <div>
+      <img src="../static/img/sooksplus-logo-horizontal.png" alt="SOOKs PLUS" style="height:38px">
+      <p class="muted" style="font-size:13.5px;margin:12px 0 0;max-width:300px">태국에서 시작한 글로벌 웰니스 검색·예약 플랫폼</p>
+    </div>
+    <div><h4>둘러보기</h4>
+      <a href="search-wellness.html">스파·마사지</a>
+      <a href="search-travel.html">리트릿·숙박</a>
+      <a href="search.html">플래티넘</a>
+      <a href="search.html">오늘 예약 가능</a></div>
+    <div><h4>파트너</h4>
+      <a href="soon.html">업체 등록</a>
+      <a href="soon.html">호텔 파트너</a>
+      <a href="soon.html">기업 웰니스</a>
+      <a href="about.html">수익 배분 모델</a></div>
+    <div><h4>계정</h4>
+      <a href="soon.html">내 계정</a>
+      <a href="soon.html">SOOKs 크레딧</a>
+      <a href="help.html">도움말</a>
+      <a href="about.html">소개</a></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 SOOKs PLUS · sooksplus.com</span>
+    <span><a href="../th/index.html">TH</a> · <a href="../en/index.html">EN</a> · <a href="../zh/index.html">ZH</a> · <a href="../ja/index.html">JA</a> · <a href="../ko/index.html">KO</a> · <a href="../ru/index.html">RU</a> · <a href="../de/index.html">DE</a> · <a href="../fr/index.html">FR</a> · <a href="../ar/index.html">AR</a></span>
+  </div>
+ </div>
+</footer>
+
+<nav class="bnav">
+  <a href="index.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M3 10.2 12 3l9 7.2V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+</svg>
+홈</a>
+  <a href="search.html" class="on">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+</svg>
+검색</a>
+  <a href="soon.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/>
+</svg>
+예약</a>
+  <a href="offers.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M20.5 13.5 13 21a2 2 0 0 1-2.8 0l-7-7A2 2 0 0 1 2.6 12l.9-7.2a1 1 0 0 1 .9-.9L11.6 3a2 2 0 0 1 1.6.6l7.3 7.3a2 2 0 0 1 0 2.6Z"/><circle cx="8" cy="8" r="1.3"/>
+</svg>
+프로모션</a>
+  <a href="soon.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="8.2" r="3.6"/><path d="M4.6 20c1.1-4 3.9-6 7.4-6s6.3 2 7.4 6"/>
+</svg>
+내 정보</a>
+</nav>
+</body>
+</html>

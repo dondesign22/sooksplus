@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بحث — SOOKs PLUS</title>
+<meta name="description" content="منصة عالمية لاكتشاف وحجز خدمات العافية، انطلقت من تايلاند">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/app.css?v=1791109595">
+<link rel="icon" href="../static/img/sooksplus-logo-horizontal.png">
+</head>
+<body>
+
+
+
+
+<header class="top">
+ <div class="wrap bar">
+  <a class="logo" href="index.html"><img src="../static/img/sooksplus-logo-horizontal.png" alt="SOOKs PLUS"></a>
+
+  <nav class="mainnav">
+    <a href="search-travel.html">الإقامة</a>
+    <a href="search-wellness.html">العافية</a>
+    <a href="search-food.html">المطاعم</a>
+    <a href="search-experience.html">التجارب</a>
+    <a href="offers.html">العروض</a>
+  </nav>
+
+  <div class="util">
+    <details class="lang hide-sm">
+      <summary class="chipbtn">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 10h17.6M3.2 14h17.6"/><path d="M12 3c2.4 2.4 3.6 5.4 3.6 9S14.4 18.6 12 21C9.6 18.6 8.4 15.6 8.4 12S9.6 5.4 12 3Z"/>
+</svg>
+ AR</summary>
+      <div class="lang-menu">
+        
+        <a class="" href="../th/index.html">
+          <span>ไทย</span><span>TH</span></a>
+        
+        <a class="" href="../en/index.html">
+          <span>English</span><span>EN</span></a>
+        
+        <a class="" href="../zh/index.html">
+          <span>中文</span><span>ZH</span></a>
+        
+        <a class="" href="../ja/index.html">
+          <span>日本語</span><span>JA</span></a>
+        
+        <a class="" href="../ko/index.html">
+          <span>한국어</span><span>KO</span></a>
+        
+        <a class="" href="../ru/index.html">
+          <span>Русский</span><span>RU</span></a>
+        
+        <a class="" href="../de/index.html">
+          <span>Deutsch</span><span>DE</span></a>
+        
+        <a class="" href="../fr/index.html">
+          <span>Français</span><span>FR</span></a>
+        
+        <a class="on" href="../ar/index.html">
+          <span>العربية</span><span>AR</span></a>
+        
+      </div>
+    </details>
+    <a class="chipbtn hide-sm" href="soon.html" aria-label="المحفوظة">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-9.6A4.4 4.4 0 0 1 12 8.3a4.4 4.4 0 0 1 7.5 2.6c0 5-7.5 9.6-7.5 9.6Z"/>
+</svg>
+</a>
+    
+      <a class="chipbtn hide-sm" href="soon.html">تسجيل الدخول</a>
+      <a class="btn btn-primary btn-sm" href="soon.html">إنشاء حساب</a>
+    
+  </div>
+ </div>
+</header>
+
+
+<div class="wrap">
+
+  <!-- compact search bar -->
+  <form class="searchpanel" method="get" action="/search" style="margin:16px auto 0;box-shadow:var(--sh-2)">
+    <input type="hidden" name="lang" value="ar">
+    <input type="hidden" name="cert" value="">
+    <div class="sp-grid">
+      <div class="sp-field"><label>الوجهة</label>
+        <input name="q" value="" placeholder="المدينة أو المنطقة أو اسم المنتجع"></div>
+      <div class="sp-field"><label>المدينة</label>
+        <select name="city"><option value="">كل المدن</option>
+          <option >ภูเก็ต</option><option >สมุย</option><option >กระบี่</option><option >เขาหลัก</option><option >เชียงใหม่</option><option selected>กรุงเทพฯ</option></select></div>
+      <div class="sp-field"><label>الفئة</label>
+        <select name="pillar"><option value="">كل الفئات</option>
+          <option value="wellness" >السبا والمساج</option><option value="mind" >التأمل والذهن</option><option value="food" >طعام صحي</option><option value="travel" >خلوات وإقامة</option><option value="experience" >تجارب تايلاندية</option><option value="community" >مجتمع العافية</option></select></div>
+      <button class="btn btn-primary" type="submit">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+</svg>
+ بحث</button>
+    </div>
+  </form>
+
+  <section>
+   <div class="results">
+    <!-- filters -->
+    <aside class="filters">
+      <div class="flex" style="justify-content:space-between;margin-bottom:6px">
+        <b style="font-size:15px">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/>
+</svg>
+ عوامل التصفية</b>
+        <a href="search.html" style="font-size:12.5px;color:var(--emerald)">مسح التصفية</a>
+      </div>
+
+      <div class="fgroup">
+        <h4>الاعتماد</h4>
+        
+        <label><input type="radio" name="cert" checked
+          onclick="location.href='/search?lang=ar&q=&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=&sort=rating&cert='">
+          الكل</label>
+        
+        <label><input type="radio" name="cert" 
+          onclick="location.href='/search?lang=ar&q=&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=&sort=rating&cert=certified'">
+          معتمد</label>
+        
+        <label><input type="radio" name="cert" 
+          onclick="location.href='/search?lang=ar&q=&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=&sort=rating&cert=platinum'">
+          بلاتيني</label>
+        
+      </div>
+
+      <div class="fgroup">
+        <h4>المدينة</h4>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95&pillar=&cert=&sort=rating'">
+          ภูเก็ต</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%A2&pillar=&cert=&sort=rating'">
+          สมุย</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88&pillar=&cert=&sort=rating'">
+          กระบี่</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ar&city=%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81&pillar=&cert=&sort=rating'">
+          เขาหลัก</label>
+        
+        <label><input type="radio" name="city" 
+          onclick="location.href='/search?lang=ar&city=%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88&pillar=&cert=&sort=rating'">
+          เชียงใหม่</label>
+        
+        <label><input type="radio" name="city" checked
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=&cert=&sort=rating'">
+          กรุงเทพฯ</label>
+        
+      </div>
+
+      <div class="fgroup">
+        <h4>الفئة</h4>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=wellness&cert=&sort=rating'">
+          السبا والمساج</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=mind&cert=&sort=rating'">
+          التأمل والذهن</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=food&cert=&sort=rating'">
+          طعام صحي</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=travel&cert=&sort=rating'">
+          خلوات وإقامة</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=experience&cert=&sort=rating'">
+          تجارب تايلاندية</label>
+        
+        <label><input type="radio" name="pillar" 
+          onclick="location.href='/search?lang=ar&city=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF&pillar=community&cert=&sort=rating'">
+          مجتمع العافية</label>
+        
+      </div>
+    </aside>
+
+    <!-- results -->
+    <div>
+      <div class="sortbar">
+        <span class="count"><b>2 نتيجة</b>
+          · กรุงเทพฯ</span>
+        <div class="flex">
+          <span class="muted" style="font-size:13px">ترتيب حسب</span>
+          
+          <a class="chipbtn on"
+             href="search-city-79016813.html">الأعلى تقييمًا</a>
+          
+          <a class="chipbtn "
+             href="search-city-79016813.html">الأقل سعرًا</a>
+          
+          <a class="chipbtn "
+             href="search-city-79016813.html">الأكثر توافرًا</a>
+          
+        </div>
+      </div>
+
+      
+        
+
+<a class="lcard" href="spa-spa-3-170d.html">
+  <div class="thumb">
+    <img src="../static/img/riverside-massage.jpg"
+         alt="Siam Herbal House" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ معتمد</span>
+    </div>
+  </div>
+  <div class="mid">
+    <h3>Siam Herbal House</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ ทองหล่อ, กรุงเทพฯ</div>
+    <p class="muted" style="margin:0;font-size:13px;display:-webkit-box;
+      -webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">นวดไทยสมุนไพรต้นตำรับ ลูกประคบสดทุกวัน</p>
+    <div class="feat">
+      <em>TH</em><em>EN</em><em>CN</em>
+      
+      <em>إلغاء مجاني</em>
+    </div>
+    
+      <div class="avail">35 مواعيد متاحة اليوم</div>
+    
+  </div>
+  <div class="side">
+    
+    <div class="scorebox" style="justify-content:flex-end">
+      <span class="word">ممتاز<br>
+        <span class="cnt">2 تقييم</span></span>
+      <b>9.5</b>
+    </div>
+    
+    <div>
+      <span class="price" style="align-items:flex-end">
+        <span class="per">ابتداءً من</span>
+        <span class="now">฿900</span>
+        <span class="per">للجلسة</span>
+      </span>
+      <span class="btn btn-primary btn-sm" style="margin-top:8px">عرض المواعيد</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="lcard" href="spa-spa-8-77a2.html">
+  <div class="thumb">
+    <img src="../static/img/exp-healthy-food.jpg"
+         alt="Bangkok Detox Studio" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ معتمد</span>
+    </div>
+  </div>
+  <div class="mid">
+    <h3>Bangkok Detox Studio</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ อารีย์, กรุงเทพฯ</div>
+    <p class="muted" style="margin:0;font-size:13px;display:-webkit-box;
+      -webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">ดีท็อกซ์ โภชนาการ และคลาสฟิตเนสเฉพาะบุคคล</p>
+    <div class="feat">
+      <em>TH</em><em>EN</em><em>CN</em>
+      
+      <em>إلغاء مجاني</em>
+    </div>
+    
+      <div class="avail">35 مواعيد متاحة اليوم</div>
+    
+  </div>
+  <div class="side">
+    
+    <div class="scorebox" style="justify-content:flex-end">
+      <span class="word">ممتاز<br>
+        <span class="cnt">3 تقييم</span></span>
+      <b>9.3</b>
+    </div>
+    
+    <div>
+      <span class="price" style="align-items:flex-end">
+        <span class="per">ابتداءً من</span>
+        <span class="now">฿900</span>
+        <span class="per">للجلسة</span>
+      </span>
+      <span class="btn btn-primary btn-sm" style="margin-top:8px">عرض المواعيد</span>
+    </div>
+  </div>
+</a>
+
+      
+    </div>
+   </div>
+  </section>
+</div>
+
+
+<footer class="site">
+ <div class="wrap">
+  <div class="fg">
+    <div>
+      <img src="../static/img/sooksplus-logo-horizontal.png" alt="SOOKs PLUS" style="height:38px">
+      <p class="muted" style="font-size:13.5px;margin:12px 0 0;max-width:300px">منصة عالمية لاكتشاف وحجز خدمات العافية، انطلقت من تايلاند</p>
+    </div>
+    <div><h4>استكشف</h4>
+      <a href="search-wellness.html">السبا والمساج</a>
+      <a href="search-travel.html">خلوات وإقامة</a>
+      <a href="search.html">بلاتيني</a>
+      <a href="search.html">متاح اليوم</a></div>
+    <div><h4>الشركاء</h4>
+      <a href="soon.html">أضف منشأتك</a>
+      <a href="soon.html">شركاء الفنادق</a>
+      <a href="soon.html">عافية الشركات</a>
+      <a href="about.html">نموذج تقاسم الإيرادات</a></div>
+    <div><h4>الحساب</h4>
+      <a href="soon.html">حسابي</a>
+      <a href="soon.html">رصيد SOOKs</a>
+      <a href="help.html">المساعدة</a>
+      <a href="about.html">من نحن</a></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 SOOKs PLUS · sooksplus.com</span>
+    <span><a href="../th/index.html">TH</a> · <a href="../en/index.html">EN</a> · <a href="../zh/index.html">ZH</a> · <a href="../ja/index.html">JA</a> · <a href="../ko/index.html">KO</a> · <a href="../ru/index.html">RU</a> · <a href="../de/index.html">DE</a> · <a href="../fr/index.html">FR</a> · <a href="../ar/index.html">AR</a></span>
+  </div>
+ </div>
+</footer>
+
+<nav class="bnav">
+  <a href="index.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M3 10.2 12 3l9 7.2V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+</svg>
+الرئيسية</a>
+  <a href="search.html" class="on">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+</svg>
+بحث</a>
+  <a href="soon.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/>
+</svg>
+حجوزاتي</a>
+  <a href="offers.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M20.5 13.5 13 21a2 2 0 0 1-2.8 0l-7-7A2 2 0 0 1 2.6 12l.9-7.2a1 1 0 0 1 .9-.9L11.6 3a2 2 0 0 1 1.6.6l7.3 7.3a2 2 0 0 1 0 2.6Z"/><circle cx="8" cy="8" r="1.3"/>
+</svg>
+العروض</a>
+  <a href="soon.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="8.2" r="3.6"/><path d="M4.6 20c1.1-4 3.9-6 7.4-6s6.3 2 7.4 6"/>
+</svg>
+حسابي</a>
+</nav>
+</body>
+</html>

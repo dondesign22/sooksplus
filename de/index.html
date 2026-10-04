@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOOKs PLUS — More Than Happiness</title>
+<meta name="description" content="Eine globale Plattform für Wellness-Suche und -Buchung, gestartet in Thailand">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/app.css?v=1791109595">
+<link rel="icon" href="../static/img/sooksplus-logo-horizontal.png">
+</head>
+<body>
+
+
+
+
+<header class="top">
+ <div class="wrap bar">
+  <a class="logo" href="index.html"><img src="../static/img/sooksplus-logo-horizontal.png" alt="SOOKs PLUS"></a>
+
+  <nav class="mainnav">
+    <a href="search-travel.html">Unterkunft</a>
+    <a href="search-wellness.html">Wellness</a>
+    <a href="search-food.html">Kulinarik</a>
+    <a href="search-experience.html">Erlebnisse</a>
+    <a href="offers.html">Angebote</a>
+  </nav>
+
+  <div class="util">
+    <details class="lang hide-sm">
+      <summary class="chipbtn">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 10h17.6M3.2 14h17.6"/><path d="M12 3c2.4 2.4 3.6 5.4 3.6 9S14.4 18.6 12 21C9.6 18.6 8.4 15.6 8.4 12S9.6 5.4 12 3Z"/>
+</svg>
+ DE</summary>
+      <div class="lang-menu">
+        
+        <a class="" href="../th/index.html">
+          <span>ไทย</span><span>TH</span></a>
+        
+        <a class="" href="../en/index.html">
+          <span>English</span><span>EN</span></a>
+        
+        <a class="" href="../zh/index.html">
+          <span>中文</span><span>ZH</span></a>
+        
+        <a class="" href="../ja/index.html">
+          <span>日本語</span><span>JA</span></a>
+        
+        <a class="" href="../ko/index.html">
+          <span>한국어</span><span>KO</span></a>
+        
+        <a class="" href="../ru/index.html">
+          <span>Русский</span><span>RU</span></a>
+        
+        <a class="on" href="../de/index.html">
+          <span>Deutsch</span><span>DE</span></a>
+        
+        <a class="" href="../fr/index.html">
+          <span>Français</span><span>FR</span></a>
+        
+        <a class="" href="../ar/index.html">
+          <span>العربية</span><span>AR</span></a>
+        
+      </div>
+    </details>
+    <a class="chipbtn hide-sm" href="soon.html" aria-label="Gemerkt">
+<svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-9.6A4.4 4.4 0 0 1 12 8.3a4.4 4.4 0 0 1 7.5 2.6c0 5-7.5 9.6-7.5 9.6Z"/>
+</svg>
+</a>
+    
+      <a class="chipbtn hide-sm" href="soon.html">Anmelden</a>
+      <a class="btn btn-primary btn-sm" href="soon.html">Registrieren</a>
+    
+  </div>
+ </div>
+</header>
+
+
+
+<!-- ============ HERO + UNIVERSAL SEARCH ============ -->
+<div class="hero">
+  <div class="slide" style="background-image:url('/static/img/hero-c-spa-massage.jpg')"></div>
+  <div class="slide" style="background-image:url('/static/img/hero-b-coffee-pool.jpg')"></div>
+  <div class="slide" style="background-image:url('/static/img/hero-d-dining.jpg')"></div>
+  <div class="slide" style="background-image:url('/static/img/hero-e-sunset-drink.jpg')"></div>
+  <div class="slide" style="background-image:url('/static/img/hero-a-worklife.jpg')"></div>
+  
+  <img class="hero-logo" src="../static/img/sooksplus-logo-reverse.png"
+       alt="SOOKs PLUS — More Than Happiness">
+  <div class="wrap hero-in">
+    <div class="eyebrow">Thailands Wellness-Buchungsplattform</div>
+    <h1 style="font-family:var(--display)">Discover Your Balance</h1>
+    <p class="sub">Vom Verband zertifizierte Betriebe · Echte Preise ohne Aufschlag · In drei Schritten bestätigt</p>
+    <div class="usp">
+      <span>
+<svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/>
+</svg>
+ Sofortige Bestätigung</span>
+      <span>
+<svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="m12 3 2.3 1.7 2.8-.2.9 2.7 2.3 1.6-1 2.7 1 2.7-2.3 1.6-.9 2.7-2.8-.2L12 21l-2.3-1.7-2.8.2-.9-2.7-2.3-1.6 1-2.7-1-2.7 2.3-1.6.9-2.7 2.8.2z"/><path d="m9 12 2 2 4-4"/>
+</svg>
+ Zertifizierte Betriebe</span>
+      <span>
+<svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21c4.5-2 7-5.3 7-9.4V6.3L12 3.5 5 6.3v5.3C5 15.7 7.5 19 12 21Z"/><path d="m9.2 12 2 2 3.6-3.8"/>
+</svg>
+ Kostenlose Stornierung 24 Std.</span>
+      <span>
+<svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 10h17.6M3.2 14h17.6"/><path d="M12 3c2.4 2.4 3.6 5.4 3.6 9S14.4 18.6 12 21C9.6 18.6 8.4 15.6 8.4 12S9.6 5.4 12 3Z"/>
+</svg>
+ 9 Sprachen, mehrere Währungen</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <form class="searchpanel" action="/search" method="get">
+    <input type="hidden" name="lang" value="de">
+    <div class="sp-tabs">
+      <button class="sp-tab on" type="button" data-pillar="">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M3 18V8m0 4h18m0 6V11a3 3 0 0 0-3-3H8"/><circle cx="7" cy="11" r="2"/>
+</svg>
+ Unterkunft</button>
+      <button class="sp-tab" type="button" data-pillar="wellness">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21c0-4 2-7 5-8-3-1-5-4-5-8-0 4-2 7-5 8 3 1 5 4 5 8Z"/><path d="M4 20h16"/>
+</svg>
+ Wellness</button>
+      <button class="sp-tab" type="button" data-pillar="food">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M6 3v8a2.5 2.5 0 0 0 5 0V3M8.5 11v10"/><path d="M17 3c-1.4 2-2 4-2 6.5 0 1.6.8 2.5 2 2.5V3Zm0 9v9"/>
+</svg>
+ Kulinarik</button>
+      <button class="sp-tab" type="button" data-pillar="experience">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="m12 3 2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.4l6-.8z"/>
+</svg>
+ Erlebnisse</button>
+    </div>
+    <input type="hidden" name="pillar" id="pillarInput" value="">
+    <div class="sp-grid">
+      <div class="sp-field">
+        <label for="q">Reiseziel</label>
+        <input id="q" name="q" placeholder="Stadt, Viertel oder Name des Spas" autocomplete="off">
+      </div>
+      <div class="sp-field">
+        <label for="date">Datum</label>
+        <input id="date" name="date" type="date" value="2026-10-04">
+      </div>
+        <div class="sp-field">
+        <label for="guests">Gäste</label>
+        <select id="guests" name="guests">
+          <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" type="submit">
+<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+</svg>
+ Suchen</button>
+    </div>
+  </form>
+
+  <!-- ============ QUICK CATEGORIES ============ -->
+  <nav class="cats">
+    
+    <a class="cat" href="search-travel.html">
+      <span class="ic">
+<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M3 18V8m0 4h18m0 6V11a3 3 0 0 0-3-3H8"/><circle cx="7" cy="11" r="2"/>
+</svg>
+</span>
+      <b>Retreats &amp; Unterkunft</b>
+    </a>
+    
+    <a class="cat" href="search-wellness.html">
+      <span class="ic">
+<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21c0-4 2-7 5-8-3-1-5-4-5-8-0 4-2 7-5 8 3 1 5 4 5 8Z"/><path d="M4 20h16"/>
+</svg>
+</span>
+      <b>Spa &amp; Massage</b>
+    </a>
+    
+    <a class="cat" href="search-food.html">
+      <span class="ic">
+<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M6 3v8a2.5 2.5 0 0 0 5 0V3M8.5 11v10"/><path d="M17 3c-1.4 2-2 4-2 6.5 0 1.6.8 2.5 2 2.5V3Zm0 9v9"/>
+</svg>
+</span>
+      <b>Gesunde Küche</b>
+    </a>
+    
+    <a class="cat" href="search-mind.html">
+      <span class="ic">
+<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="7" r="2.6"/><path d="M5 20c1.4-3.4 4-5 7-5s5.6 1.6 7 5"/><path d="M9.2 11 5.6 8.6M14.8 11l3.6-2.4"/>
+</svg>
+</span>
+      <b>Meditation &amp; Geist</b>
+    </a>
+    
+    <a class="cat" href="search-experience.html">
+      <span class="ic">
+<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="m12 3 2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.4l6-.8z"/>
+</svg>
+</span>
+      <b>Thailändische Erlebnisse</b>
+    </a>
+    
+    <a class="cat" href="search-community.html">
+      <span class="ic">
+<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="9" cy="9.5" r="2.6"/><circle cx="16.5" cy="10.5" r="2.1"/><path d="M3.5 19c.9-2.9 2.9-4.4 5.5-4.4s4.6 1.5 5.5 4.4M14.6 19c.5-2 1.8-3.1 3.5-3.1 1.6 0 2.9 1.1 3.4 3.1"/>
+</svg>
+</span>
+      <b>Wellness-Community</b>
+    </a>
+    
+  </nav>
+
+  <!-- ============ TRUST LAYER ============ -->
+  <div class="trustbar">
+    <div><span class="i">
+<svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.3 2"/>
+</svg>
+</span><div><b>Echtzeit-Verfügbarkeit</b><span>Kein Warten auf die Bestätigung</span></div></div>
+    <div><span class="i">
+<svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="m12 3 2.3 1.7 2.8-.2.9 2.7 2.3 1.6-1 2.7 1 2.7-2.3 1.6-.9 2.7-2.8-.2L12 21l-2.3-1.7-2.8.2-.9-2.7-2.3-1.6 1-2.7-1-2.7 2.3-1.6.9-2.7 2.8.2z"/><path d="m9 12 2 2 4-4"/>
+</svg>
+</span><div><b>Zertifizierte Betriebe</b><span>Lizenz des Gesundheitsministeriums + Verbandsstandard</span></div></div>
+    <div><span class="i">
+<svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H18a2 2 0 0 1 2 2v1"/><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><circle cx="16.5" cy="13.5" r="1.3"/>
+</svg>
+</span><div><b>Flexibel bezahlen</b><span>Karte, PromptPay, Alipay, WeChat</span></div></div>
+    <div><span class="i">
+<svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21c4.5-2 7-5.3 7-9.4V6.3L12 3.5 5 6.3v5.3C5 15.7 7.5 19 12 21Z"/><path d="m9.2 12 2 2 3.6-3.8"/>
+</svg>
+</span><div><b>Kostenlose Stornierung</b><span>Bis 24 Stunden vor dem Termin</span></div></div>
+  </div>
+
+  <!-- ============ AVAILABLE TODAY ============ -->
+  <section>
+    <div class="sec-head">
+      <div><h2>Heute verfügbar</h2><p class="sub">Echte freie Termine, sofort bestätigt — kein Gutschein, auf den Sie warten müssen</p></div>
+      <a href="search.html">Alle ansehen →</a>
+    </div>
+    <div class="rail">
+      
+
+<a class="pcard" href="spa-spa-1-8b02.html">
+  <div class="thumb">
+    <img src="../static/img/exp-spa-massage.jpg"
+         alt="The Ocean Spa Phuket" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-plat">Platin</span>
+      
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>The Ocean Spa Phuket</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ ป่าตอง</div>
+    
+    <div class="scorebox">
+      <b>9.5</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">6 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 12 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-4-b0ef.html">
+  <div class="thumb">
+    <img src="../static/img/onsen-bath.jpg"
+         alt="Andaman Sands Hotel Spa" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-plat">Platin</span>
+      
+      <span class="tag tag-hotel">Hotel-Spa</span>
+    </div>
+  </div>
+  <div class="body">
+    <h3>Andaman Sands Hotel Spa</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ บางเทา</div>
+    
+    <div class="scorebox">
+      <b>9.3</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">3 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 31 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-6-ddef.html">
+  <div class="thumb">
+    <img src="../static/img/exp-stay-room.jpg"
+         alt="Krabi Cliff Spa" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ Zertifiziert</span>
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Krabi Cliff Spa</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ อ่าวนาง</div>
+    
+    <div class="scorebox">
+      <b>10.0</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">2 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 14 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-10-d6a2.html">
+  <div class="thumb">
+    <img src="../static/img/terrace-couple-sunset.jpg"
+         alt="Patong Royal Thai Massage" loading="lazy">
+    <div class="tags">
+      
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Patong Royal Thai Massage</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ ป่าตอง</div>
+    
+    <div class="scorebox">
+      <b>10.0</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">3 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 14 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-2-1128.html">
+  <div class="thumb">
+    <img src="../static/img/spa-waterfall-massage.jpg"
+         alt="Lanna Wellness Resort" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ Zertifiziert</span>
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Lanna Wellness Resort</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ นิมมาน</div>
+    
+    <div class="scorebox">
+      <b>9.5</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">4 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 23 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿1,500</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-3-170d.html">
+  <div class="thumb">
+    <img src="../static/img/riverside-massage.jpg"
+         alt="Siam Herbal House" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ Zertifiziert</span>
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Siam Herbal House</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ ทองหล่อ</div>
+    
+    <div class="scorebox">
+      <b>9.5</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">2 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 35 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-9-3e45.html">
+  <div class="thumb">
+    <img src="../static/img/mind-morning-coffee.jpg"
+         alt="Chiang Mai Mindful Space" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ Zertifiziert</span>
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Chiang Mai Mindful Space</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ สันกำแพง</div>
+    
+    <div class="scorebox">
+      <b>9.5</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">2 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 26 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-7-863e.html">
+  <div class="thumb">
+    <img src="../static/img/dining-sunset-couple.jpg"
+         alt="Khao Lak Green Spa" loading="lazy">
+    <div class="tags">
+      
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Khao Lak Green Spa</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ บางเนียง</div>
+    
+    <div class="scorebox">
+      <b>9.4</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">7 Bewertungen</span>
+    </div>
+    
+    
+      <div class="avail">Heute 27 Termine frei</div>
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+    </div>
+  </section>
+
+  <!-- ============ DESTINATIONS ============ -->
+  <section>
+    <div class="sec-head">
+      <div><h2>Beliebte Reiseziele</h2><p class="sub">Wählen Sie Ihr Ziel und sehen Sie, was wirklich frei ist</p></div>
+    </div>
+    
+    <div class="dests">
+      
+      <a class="dtile" href="search-city-54527452.html">
+        <img src="../static/img/boat-sunset.jpg" alt="ภูเก็ต" loading="lazy">
+        <div class="t"><b>ภูเก็ต</b><span>6 Betriebe</span></div></a>
+      
+      <a class="dtile" href="search-city-82489053.html">
+        <img src="../static/img/mind-morning-coffee.jpg" alt="เชียงใหม่" loading="lazy">
+        <div class="t"><b>เชียงใหม่</b><span>2 Betriebe</span></div></a>
+      
+      <a class="dtile" href="search-city-79016813.html">
+        <img src="../static/img/terrace-couple-sunset.jpg" alt="กรุงเทพฯ" loading="lazy">
+        <div class="t"><b>กรุงเทพฯ</b><span>2 Betriebe</span></div></a>
+      
+      <a class="dtile" href="search-city-49227247.html">
+        <img src="../static/img/exp-relax-fire.jpg" alt="เขาหลัก" loading="lazy">
+        <div class="t"><b>เขาหลัก</b><span>1 Betriebe</span></div></a>
+      
+      <a class="dtile" href="search-city-24116361.html">
+        <img src="../static/img/pool-lounge-sunset.jpg" alt="สมุย" loading="lazy">
+        <div class="t"><b>สมุย</b><span>1 Betriebe</span></div></a>
+      
+      <a class="dtile" href="search-city-81124832.html">
+        <img src="../static/img/dining-sunset-couple.jpg" alt="กระบี่" loading="lazy">
+        <div class="t"><b>กระบี่</b><span>1 Betriebe</span></div></a>
+      
+    </div>
+  </section>
+
+  <!-- ============ OFFERS ============ -->
+  
+  <section>
+    <div class="deal">
+      <div>
+        <h2>Gutscheincodes heute</h2>
+        <p>Code an der Kasse eingeben — der Rabatt wird automatisch abgezogen</p>
+      </div>
+      <div class="codes">
+        
+        <div class="code"><b>TESTCODE</b>
+          -฿100
+           · ab ฿500
+        </div>
+        
+        <div class="code"><b>HOTEL15</b>
+          -15%
+           · ab ฿1,000
+        </div>
+        
+        <div class="code"><b>SOOKS200</b>
+          -฿200
+           · ab ฿1,500
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- ============ TOP RATED ============ -->
+  
+  <section>
+    <div class="sec-head">
+      <div><h2>Top bewertet von echten Gästen</h2><p class="sub">Bewertungen nur von Gästen, die tatsächlich gebucht haben</p></div>
+      <a href="search.html">Alle ansehen →</a>
+    </div>
+    <div class="rail">
+
+<a class="pcard" href="spa-spa-10-d6a2.html">
+  <div class="thumb">
+    <img src="../static/img/terrace-couple-sunset.jpg"
+         alt="Patong Royal Thai Massage" loading="lazy">
+    <div class="tags">
+      
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Patong Royal Thai Massage</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ ป่าตอง</div>
+    
+    <div class="scorebox">
+      <b>10.0</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">3 Bewertungen</span>
+    </div>
+    
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-6-ddef.html">
+  <div class="thumb">
+    <img src="../static/img/exp-stay-room.jpg"
+         alt="Krabi Cliff Spa" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ Zertifiziert</span>
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Krabi Cliff Spa</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ อ่าวนาง</div>
+    
+    <div class="scorebox">
+      <b>10.0</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">2 Bewertungen</span>
+    </div>
+    
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-1-8b02.html">
+  <div class="thumb">
+    <img src="../static/img/exp-spa-massage.jpg"
+         alt="The Ocean Spa Phuket" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-plat">Platin</span>
+      
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>The Ocean Spa Phuket</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ ป่าตอง</div>
+    
+    <div class="scorebox">
+      <b>9.5</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">6 Bewertungen</span>
+    </div>
+    
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿900</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+
+
+<a class="pcard" href="spa-spa-2-1128.html">
+  <div class="thumb">
+    <img src="../static/img/spa-waterfall-massage.jpg"
+         alt="Lanna Wellness Resort" loading="lazy">
+    <div class="tags">
+      <span class="tag tag-cert">✓ Zertifiziert</span>
+      
+    </div>
+  </div>
+  <div class="body">
+    <h3>Lanna Wellness Resort</h3>
+    <div class="place">
+<svg class="ic" width="13" height="13" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+</svg>
+ นิมมาน</div>
+    
+    <div class="scorebox">
+      <b>9.5</b>
+      <span class="word">Hervorragend</span>
+      <span class="cnt">4 Bewertungen</span>
+    </div>
+    
+    
+    <div class="pricerow">
+      <span class="price">
+        <span class="now">฿1,500</span>
+        <span class="per">pro Anwendung</span>
+      </span>
+      <span class="go">Verfügbarkeit prüfen</span>
+    </div>
+  </div>
+</a>
+</div>
+  </section>
+  
+
+  <!-- ============ 6 PLUS EDITORIAL ============ -->
+  <section>
+    <div class="sec-head">
+      <div><h2><span class="ser">Die 6 PLUS Erlebnisse</span></h2>
+        <p class="sub">Sechs Säulen des Wohlbefindens auf einer Plattform</p></div>
+    </div>
+    <div class="ed">
+      <a class="ecard" href="search-wellness.html">
+        <img src="../static/img/exp-spa-massage.jpg" alt="" loading="lazy">
+        <div class="cap"><b>Spa &amp; Wellness</b><span>Spa &amp; Massage</span></div></a>
+      <a class="ecard" href="search-food.html">
+        <img src="../static/img/exp-healthy-food.jpg" alt="" loading="lazy">
+        <div class="cap"><b>Healthy Dining</b><span>Gesunde Küche</span></div></a>
+      <a class="ecard" href="search-travel.html">
+        <img src="../static/img/exp-stay-room.jpg" alt="" loading="lazy">
+        <div class="cap"><b>Stay &amp; Retreat</b><span>Retreats &amp; Unterkunft</span></div></a>
+      <a class="ecard" href="search-mind.html">
+        <img src="../static/img/exp-relax-fire.jpg" alt="" loading="lazy">
+        <div class="cap"><b>Mind &amp; Relaxation</b><span>Meditation &amp; Geist</span></div></a>
+    </div>
+  </section>
+
+  <!-- ============ PARTNER CTA ============ -->
+  <section>
+    <div class="split">
+      <div class="panel">
+        <h3>Spa eintragen</h3>
+        <p class="muted" style="font-size:14px">Kostenlose Betriebssoftware — Kalender, CRM, POS · Halbe OTA-Provision · Gäste von Hotelpartnern</p>
+        <a class="btn btn-emerald" href="soon.html">Spa eintragen</a>
+      </div>
+      <div class="panel">
+        <h3>Hotelpartner</h3>
+        <p class="muted" style="font-size:14px">Verdienen Sie an jeder Buchung Ihrer Gäste — per QR, Link oder Lobby-Kiosk, ohne Investition</p>
+        <a class="btn btn-ghost" href="soon.html">Partner werden</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+document.querySelectorAll('.sp-tab').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.sp-tab').forEach(function(x){ x.classList.remove('on'); });
+    b.classList.add('on');
+    document.getElementById('pillarInput').value = b.dataset.pillar;
+  });
+});
+</script>
+
+
+<footer class="site">
+ <div class="wrap">
+  <div class="fg">
+    <div>
+      <img src="../static/img/sooksplus-logo-horizontal.png" alt="SOOKs PLUS" style="height:38px">
+      <p class="muted" style="font-size:13.5px;margin:12px 0 0;max-width:300px">Eine globale Plattform für Wellness-Suche und -Buchung, gestartet in Thailand</p>
+    </div>
+    <div><h4>Entdecken</h4>
+      <a href="search-wellness.html">Spa &amp; Massage</a>
+      <a href="search-travel.html">Retreats &amp; Unterkunft</a>
+      <a href="search.html">Platin</a>
+      <a href="search.html">Heute verfügbar</a></div>
+    <div><h4>Partner</h4>
+      <a href="soon.html">Spa eintragen</a>
+      <a href="soon.html">Hotelpartner</a>
+      <a href="soon.html">Corporate Wellness</a>
+      <a href="about.html">Modell der Erlösbeteiligung</a></div>
+    <div><h4>Konto</h4>
+      <a href="soon.html">Mein Konto</a>
+      <a href="soon.html">SOOKs Credits</a>
+      <a href="help.html">Hilfe</a>
+      <a href="about.html">Über uns</a></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 SOOKs PLUS · sooksplus.com</span>
+    <span><a href="../th/index.html">TH</a> · <a href="../en/index.html">EN</a> · <a href="../zh/index.html">ZH</a> · <a href="../ja/index.html">JA</a> · <a href="../ko/index.html">KO</a> · <a href="../ru/index.html">RU</a> · <a href="../de/index.html">DE</a> · <a href="../fr/index.html">FR</a> · <a href="../ar/index.html">AR</a></span>
+  </div>
+ </div>
+</footer>
+
+<nav class="bnav">
+  <a href="index.html" class="on">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M3 10.2 12 3l9 7.2V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+</svg>
+Start</a>
+  <a href="search.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+</svg>
+Suche</a>
+  <a href="soon.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/>
+</svg>
+Buchungen</a>
+  <a href="offers.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><path d="M20.5 13.5 13 21a2 2 0 0 1-2.8 0l-7-7A2 2 0 0 1 2.6 12l.9-7.2a1 1 0 0 1 .9-.9L11.6 3a2 2 0 0 1 1.6.6l7.3 7.3a2 2 0 0 1 0 2.6Z"/><circle cx="8" cy="8" r="1.3"/>
+</svg>
+Angebote</a>
+  <a href="soon.html" class="">
+<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true"><circle cx="12" cy="8.2" r="3.6"/><path d="M4.6 20c1.1-4 3.9-6 7.4-6s6.3 2 7.4 6"/>
+</svg>
+Konto</a>
+</nav>
+</body>
+</html>
